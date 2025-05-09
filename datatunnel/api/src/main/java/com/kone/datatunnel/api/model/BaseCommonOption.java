@@ -6,6 +6,12 @@ import org.apache.curator.shaded.com.google.common.collect.Maps;
 
 import com.kone.datatunnel.api.DataSourceType;
 
+/*
+ * 描述：
+ *  1. 定义源数据类型
+ *  2. 定义临时表名
+ *  3. 管理自定义属性
+ */
 public class BaseCommonOption implements DataTunnelOption{
     private DataSourceType dataSourceType;
     private String sourceTempView;
