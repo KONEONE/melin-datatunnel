@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+          <groupId>com.kone.datatunnel</groupId>
+          <artifactId>datatunnel</artifactId>
+          <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.kone.datatunnel</groupId>
+    <artifactId>datatunnel-common</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.kone.datatunnel</groupId>
+            <artifactId>datatunnel-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- 高性能的 HTTP 客户端库，支持现代 HTTP 标准（如 HTTP/1.1 和 HTTPS），
+        提供高效的请求执行、连接管理、重定向处理、认证机制等功能。 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version>
+        </dependency>
+        <!-- 纯 Java 实现的 SSH2 协议库，支持安全地建立远程连接并执行命
+        令、文件传输（SFTP）及端口转发 -->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.55</version>
+        </dependency>
+        <!-- 常见网络协议的客户端实现，涵盖 FTP、SMTP、POP3、Telnet、NTP等
+        协议的工具类 -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <!-- 广泛使用的开源加密库，提供 JCA/JCE 标准接口的实现及低层加密
+        算法（如 AES、RSA、ECC） -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk18on</artifactId>
+            <version>1.77</version>
+        </dependency>
+        <!-- 通用对象池管理库，用于高效复用资源（如数据库连接、Socket 连接） -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+        <!-- 用于对 Java Bean 进行声明式数据校验 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.2.5.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gitee.melin.bee</groupId>
+            <artifactId>bee</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

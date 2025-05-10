@@ -6,6 +6,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>datatunnel-api</module>
+    <module>common</module>
   </modules>
   <version>1.0.0</version>
 
