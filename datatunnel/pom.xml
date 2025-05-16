@@ -5,8 +5,8 @@
   <artifactId>datatunnel</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>datatunnel-common</module>
     <module>datatunnel-api</module>
-    <module>common</module>
   </modules>
   <version>1.0.0</version>
 
@@ -286,7 +286,7 @@
                         <scalafmt>
                             <version>3.8.3</version>
                             <scalaMajorVersion>2.12</scalaMajorVersion>
-                            <file>dev/scalafmt.conf</file>
+                            <file>/Volumes/Data/code/java_code/melin-datatunnel/datatunnel/dev/scalafmt.conf</file>
                         </scalafmt>
                     </scala>
                     <pom>
